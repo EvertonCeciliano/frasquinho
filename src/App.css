@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
+  width: 100%;
+}
+
+h1 {
+  color: #b023db;
+  font-size: 2em;
+}
+
+.jar {
+  width: 150px;
+  height: 300px;
+  border: 2px solid #b023db;
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.jar-content {
+  width: 100%;
+  background-color: #ff0000;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  transition: height 0.5s ease;
+}
+
+.message {
+  font-size: 1.2em;
+  color: #555;
+  margin: 20px;
+}
+
+button {
+  background-color:  #b023db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(1.5);
+    opacity: 0;
+  }
+}
